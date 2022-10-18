@@ -25,12 +25,12 @@ https.get(url, function(response){
 
     response.on("data", function(data){
         const weatherData = JSON.parse(data);
-        // const temp = weatherData.main.temp;
+        const temp = weatherData.main.temp;
         // console.log(temp);
         const description = weatherData.weather[0].description;
         // console.log(description);
 
-        // res.write("<h1>Temperature in" + query + " is " + temp + "°C </h1>");
+        res.write("<h1>Temperature in" + query + " is " + temp + "°C </h1>");
         res.write("<p>The weather is currently" + description + "</p>");
 
         res.send();
