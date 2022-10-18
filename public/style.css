@@ -1,3 +1,33 @@
-body{
-    background-color: aqua;
-}
+.custom-search {
+    position: relative;
+    width: 300px;
+  }
+  #cityInput {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    padding: 10px 100px 10px 20px; 
+    line-height: 1;
+    box-sizing: border-box;
+    outline: none;
+  }
+  .custom-search-botton {
+    position: absolute;
+    right: 3px; 
+    top: 3px;
+    bottom: 3px;
+    border: 0;
+    background: #d1095e;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 100px;
+    z-index: 2;
+  }
+  body {
+    background: #4ECDC4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
